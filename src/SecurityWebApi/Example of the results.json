@@ -1,0 +1,381 @@
+{
+  "ApiUrl": "/api/security",
+  "ApiName": "ToDo API",
+  "Controllers": [
+    {
+      "ControllerUrl": "/api/security/apples",
+      "ControllerName": "Apples",
+      "Actions": [
+        {
+          "ActionName": "",
+          "HttpType": "HttpGet",
+          "ActionUrl": "/api/security/apples",
+          "Properties": [
+            {
+              "ReferenceId": "AppleViewModel",
+              "Name": "id",
+              "Type": "integer",
+              "Format": "int32",
+              "Properties": null
+            },
+            {
+              "ReferenceId": "AppleViewModel",
+              "Name": "name",
+              "Type": "string",
+              "Format": null,
+              "Properties": null
+            }
+          ]
+        },
+        {
+          "ActionName": "",
+          "HttpType": "HttpPost",
+          "ActionUrl": "/api/security/apples",
+          "Properties": [
+            {
+              "ReferenceId": "AppleViewModel",
+              "Name": "id",
+              "Type": "integer",
+              "Format": "int32",
+              "Properties": null
+            },
+            {
+              "ReferenceId": "AppleViewModel",
+              "Name": "name",
+              "Type": "string",
+              "Format": null,
+              "Properties": null
+            }
+          ]
+        },
+        {
+          "ActionName": "{id}",
+          "HttpType": "HttpGet",
+          "ActionUrl": "/api/security/apples/{id}",
+          "Properties": [
+            {
+              "ReferenceId": "AppleViewModel",
+              "Name": "id",
+              "Type": "integer",
+              "Format": "int32",
+              "Properties": null
+            },
+            {
+              "ReferenceId": "AppleViewModel",
+              "Name": "name",
+              "Type": "string",
+              "Format": null,
+              "Properties": null
+            }
+          ]
+        },
+        {
+          "ActionName": "{id}",
+          "HttpType": "HttpPut",
+          "ActionUrl": "/api/security/apples/{id}",
+          "Properties": [
+            {
+              "ReferenceId": "AppleViewModel",
+              "Name": "id",
+              "Type": "integer",
+              "Format": "int32",
+              "Properties": null
+            },
+            {
+              "ReferenceId": "AppleViewModel",
+              "Name": "name",
+              "Type": "string",
+              "Format": null,
+              "Properties": null
+            }
+          ]
+        },
+        {
+          "ActionName": "{id}",
+          "HttpType": "HttpDelete",
+          "ActionUrl": "/api/security/apples/{id}",
+          "Properties": null
+        }
+      ]
+    },
+    {
+      "ControllerUrl": "/api/security/bananas",
+      "ControllerName": "Bananas",
+      "Actions": [
+        {
+          "ActionName": "",
+          "HttpType": "HttpGet",
+          "ActionUrl": "/api/security/bananas",
+          "Properties": [
+            {
+              "ReferenceId": "BananaViewModel",
+              "Name": "size",
+              "Type": "integer",
+              "Format": "int32",
+              "Properties": null
+            },
+            {
+              "ReferenceId": "BananaViewModel",
+              "Name": "isRight",
+              "Type": "boolean",
+              "Format": null,
+              "Properties": null
+            }
+          ]
+        },
+        {
+          "ActionName": "",
+          "HttpType": "HttpPost",
+          "ActionUrl": "/api/security/bananas",
+          "Properties": [
+            {
+              "ReferenceId": "BananaViewModel",
+              "Name": "size",
+              "Type": "integer",
+              "Format": "int32",
+              "Properties": null
+            },
+            {
+              "ReferenceId": "BananaViewModel",
+              "Name": "isRight",
+              "Type": "boolean",
+              "Format": null,
+              "Properties": null
+            }
+          ]
+        },
+        {
+          "ActionName": "{id}",
+          "HttpType": "HttpGet",
+          "ActionUrl": "/api/security/bananas/{id}",
+          "Properties": [
+            {
+              "ReferenceId": "BananaViewModel",
+              "Name": "size",
+              "Type": "integer",
+              "Format": "int32",
+              "Properties": null
+            },
+            {
+              "ReferenceId": "BananaViewModel",
+              "Name": "isRight",
+              "Type": "boolean",
+              "Format": null,
+              "Properties": null
+            }
+          ]
+        },
+        {
+          "ActionName": "{id}",
+          "HttpType": "HttpPut",
+          "ActionUrl": "/api/security/bananas/{id}",
+          "Properties": [
+            {
+              "ReferenceId": "BananaViewModel",
+              "Name": "size",
+              "Type": "integer",
+              "Format": "int32",
+              "Properties": null
+            },
+            {
+              "ReferenceId": "BananaViewModel",
+              "Name": "isRight",
+              "Type": "boolean",
+              "Format": null,
+              "Properties": null
+            }
+          ]
+        },
+        {
+          "ActionName": "{id}",
+          "HttpType": "HttpDelete",
+          "ActionUrl": "/api/security/bananas/{id}",
+          "Properties": null
+        }
+      ]
+    },
+    {
+      "ControllerUrl": "/api/security/calculate",
+      "ControllerName": "Calculate",
+      "Actions": [
+        {
+          "ActionName": "",
+          "HttpType": "HttpGet",
+          "ActionUrl": "/api/security/calculate",
+          "Properties": [
+            {
+              "ReferenceId": null,
+              "Name": null,
+              "Type": "number",
+              "Format": "double",
+              "Properties": null
+            }
+          ]
+        },
+        {
+          "ActionName": "{randomData}/{multiplier}",
+          "HttpType": "HttpGet",
+          "ActionUrl": "/api/security/calculate/{randomData}/{multiplier}",
+          "Properties": [
+            {
+              "ReferenceId": "RandomCalculationViewModel",
+              "Name": "randomData",
+              "Type": "string",
+              "Format": null,
+              "Properties": null
+            },
+            {
+              "ReferenceId": "RandomCalculationViewModel",
+              "Name": "internetCount",
+              "Type": "string",
+              "Format": null,
+              "Properties": null
+            },
+            {
+              "ReferenceId": "RandomCalculationViewModel",
+              "Name": "somtehing",
+              "Type": "string",
+              "Format": null,
+              "Properties": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ControllerUrl": "/api/security/checks",
+      "ControllerName": "Checks",
+      "Actions": [
+        {
+          "ActionName": "{id}",
+          "HttpType": "HttpGet",
+          "ActionUrl": "/api/security/checks/{id}",
+          "Properties": [
+            {
+              "ReferenceId": "UserDataViewModel",
+              "Name": "id",
+              "Type": "integer",
+              "Format": "int32",
+              "Properties": null
+            },
+            {
+              "ReferenceId": "UserDataViewModel",
+              "Name": "name",
+              "Type": "string",
+              "Format": null,
+              "Properties": null
+            },
+            {
+              "ReferenceId": "UserDataViewModel",
+              "Name": "surname",
+              "Type": "string",
+              "Format": null,
+              "Properties": null
+            },
+            {
+              "ReferenceId": "UserDataViewModel",
+              "Name": "address",
+              "Type": "AddressViewModel",
+              "Format": null,
+              "Properties": [
+                {
+                  "ReferenceId": "AddressViewModel",
+                  "Name": "country",
+                  "Type": "string",
+                  "Format": null,
+                  "Properties": null
+                },
+                {
+                  "ReferenceId": "AddressViewModel",
+                  "Name": "city",
+                  "Type": "string",
+                  "Format": null,
+                  "Properties": null
+                },
+                {
+                  "ReferenceId": "AddressViewModel",
+                  "Name": "street",
+                  "Type": "string",
+                  "Format": null,
+                  "Properties": null
+                },
+                {
+                  "ReferenceId": "AddressViewModel",
+                  "Name": "houseNumber",
+                  "Type": "string",
+                  "Format": null,
+                  "Properties": null
+                }
+              ]
+            },
+            {
+              "ReferenceId": "UserDataViewModel",
+              "Name": "phones",
+              "Type": "PhoneViewModel",
+              "Format": null,
+              "Properties": [
+                {
+                  "ReferenceId": "PhoneViewModel",
+                  "Name": "number",
+                  "Type": "string",
+                  "Format": null,
+                  "Properties": null
+                },
+                {
+                  "ReferenceId": "PhoneViewModel",
+                  "Name": "type",
+                  "Type": "integer",
+                  "Format": "int32",
+                  "Properties": null
+                }
+              ]
+            },
+            {
+              "ReferenceId": "UserDataViewModel",
+              "Name": "emails",
+              "Type": null,
+              "Format": null,
+              "Properties": [
+                {
+                  "ReferenceId": null,
+                  "Name": null,
+                  "Type": "string",
+                  "Format": null,
+                  "Properties": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ActionName": "",
+          "HttpType": "HttpGet",
+          "ActionUrl": "/api/security/checks",
+          "Properties": [
+            {
+              "ReferenceId": null,
+              "Name": null,
+              "Type": "integer",
+              "Format": "int64",
+              "Properties": null
+            }
+          ]
+        },
+        {
+          "ActionName": "",
+          "HttpType": "HttpPost",
+          "ActionUrl": "/api/security/checks",
+          "Properties": [
+            {
+              "ReferenceId": "EmptyViewModel",
+              "Name": "imNotEmpty",
+              "Type": "boolean",
+              "Format": null,
+              "Properties": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
