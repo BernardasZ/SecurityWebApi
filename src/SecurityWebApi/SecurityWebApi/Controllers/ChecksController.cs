@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SecurityWebApi.FilterAttributes;
 using SecurityWebApi.Models;
+using System.Collections.Generic;
 
 namespace SecurityWebApi.Controllers
 {
@@ -10,18 +11,41 @@ namespace SecurityWebApi.Controllers
 	{
 		[HttpGet("{id}")]
 		[SecurityResourceFilter]
-		public ActionResult<TestOneViewModel> GetData(int id)
+		public ActionResult<UserDataViewModel> GetData(int id)
 		{
-			return Ok(new TestOneViewModel
+			return Ok(new UserDataViewModel
 			{
 				Id = 1,
 				Name = "Bernardas",
 				Surname = "Zokas",
-				Country = "Lithuania",
-				City = "Vilnius",
-				Street = "Sausio 13'osios",
-				HouseNumber = "11-50"
+				Address = new AddressViewModel
+				{
+					Country = "Lithuania",
+					City = "Vilnius",
+					Street = "Sausio 13'osios",
+					HouseNumber = "11-50"
+				},
+				Phones = new List<PhoneViewModel>
+				{
+					new PhoneViewModel
+					{
+						Number = "868888888",
+						Type =  PhoneNumberType.Mobile
+					}
+				}
 			});
+		}
+
+		[HttpGet]
+		public ActionResult<List<long>> GetData()
+		{
+			return Ok(new List<long>());
+		}
+
+		[HttpPost]
+		public ActionResult<EmptyViewModel> CreateEmpty()
+		{
+			return Ok(new EmptyViewModel());
 		}
 	}
 }

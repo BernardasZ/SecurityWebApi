@@ -1,6 +1,6 @@
 ﻿namespace SecurityWebApi.Models
 {
-	public class TestTwoViewModel
+	public class RandomCalculationViewModel
 	{
 		public string RandomData { get; set; }
 		public string InternetCount { get; set; }
