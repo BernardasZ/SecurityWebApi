@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenApiScrapper", "OpenApiScrapper\OpenApiScrapper.csproj", "{31EB4DAF-7ECF-4838-800A-A9F5BFF98DE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "..\PermissionHandler\Domain\Domain.csproj", "{76E545B9-4A3B-435C-92B9-17A5B1723444}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{31EB4DAF-7ECF-4838-800A-A9F5BFF98DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31EB4DAF-7ECF-4838-800A-A9F5BFF98DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31EB4DAF-7ECF-4838-800A-A9F5BFF98DE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E545B9-4A3B-435C-92B9-17A5B1723444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E545B9-4A3B-435C-92B9-17A5B1723444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E545B9-4A3B-435C-92B9-17A5B1723444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E545B9-4A3B-435C-92B9-17A5B1723444}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
